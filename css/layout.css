@@ -1,0 +1,121 @@
+:root {
+  --color-bg: #14120f;
+  --color-bg-alt: #1c1a16;
+  --color-text: #e8e3d9;
+  --color-text-dim: #9a9488;
+  --color-accent: #c17a5b;
+  --color-border: #302c26;
+  --color-bg-elevated: #25221d;
+  --color-text-muted: #9a9488;
+  --font-display: 'Cormorant', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-base: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-btn: 0 10px 24px rgba(193, 122, 91, 0.28);
+  --container: 1120px;
+  --header-height: 72px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+.section__title {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.section__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-accent);
+  margin: 20px auto 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--color-bg);
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-text);
+  border-color: var(--color-text);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--small {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.btn--pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.link {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-accent);
+  transition: color 0.25s ease;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}

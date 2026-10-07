@@ -1,0 +1,12 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "disabled_providers": ["nvidia"],
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "playwright-mcp@latest"],
+      "enabled": true,
+      "timeout": 30000
+    }
+  }
+}

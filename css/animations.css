@@ -1,0 +1,225 @@
+.section__title,
+.section__text,
+.section__content,
+.hero__title,
+.hero__subtitle,
+.hero__cta,
+.section .btn,
+.services__card,
+.approach__item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section.is-visible .section__title,
+.section.is-visible .hero__title {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.section.is-visible .section__text,
+.section.is-visible .hero__subtitle {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s;
+}
+
+.section.is-visible .section__content,
+.section.is-visible .hero__cta,
+.section.is-visible .services__card,
+.section.is-visible .approach__item,
+.section.is-visible .btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s;
+}
+
+.section.is-visible .services__card,
+.section.is-visible .approach__item {
+  transition: opacity 0.7s ease 0.3s, transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.section.is-visible .btn {
+  transition: opacity 0.7s ease 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section.is-visible .services__card:hover,
+.section.is-visible .approach__item:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn);
+}
+
+.faq__answer {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.faq__item.is-open .faq__answer {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle.is-active .nav-toggle__line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.is-active .nav-toggle__line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.is-active .nav-toggle__line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.modal {
+  opacity: 0;
+  transform: scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.modal.is-open {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.modal__overlay {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.modal.is-open .modal__overlay {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(30px, -30px);
+  }
+}
+
+.hero__bg-circle {
+  animation: float 8s ease-in-out infinite;
+}
+
+.hero__bg-circle:nth-child(2) {
+  animation-duration: 10s;
+}
+
+.hero__bg-circle:nth-child(3) {
+  animation-duration: 12s;
+}
+
+.modal__check-circle {
+  animation: scaleIn 0.4s ease-out both;
+}
+
+.modal__check-mark {
+  animation: drawCheck 0.3s ease-out 0.35s both;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCheck {
+  from {
+    stroke-dashoffset: 60;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 rgba(193, 122, 91, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(193, 122, 91, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(193, 122, 91, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .section__title,
+  .section__text,
+  .section__content,
+  .hero__title,
+  .hero__subtitle,
+  .hero__cta,
+  .services__card,
+  .approach__item,
+  .btn,
+  .reviews__track,
+  .reviews__dot,
+  .nav,
+  .nav-toggle__line {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .btn:hover,
+  .services__card:hover,
+  .approach__item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .modal,
+  .modal__overlay {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+
+  .modal__check-circle,
+  .modal__check-mark {
+    animation: none;
+  }
+
+  .hero__bg-circle {
+    animation: none;
+  }
+
+  .btn--pulse {
+    animation: none;
+  }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анна Волкова — психолог | Пространство</title>
+  <meta name="description" content="Психолог Анна Волкова. Работа с тревожностью, отношениями и самооценкой. Индивидуальные, парные и групповые консультации.">
+  <meta property="og:title" content="Анна Волкова — психолог | Пространство">
+  <meta property="og:description" content="Психолог Анна Волкова. Работа с тревожностью, отношениями и самооценкой.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anna-volkova.ru">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Анна Волкова — психолог | Пространство">
+  <meta name="twitter:description" content="Психолог Анна Волкова. Работа с тревожностью, отношениями и самооценкой.">
+  <meta name="theme-color" content="#14120f">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#hero">А. Волкова</a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">О себе</a></li>
+          <li><a class="nav__link" href="#services">Услуги</a></li>
+          <li><a class="nav__link" href="#approach">Подход</a></li>
+          <li><a class="nav__link" href="#education">Образование</a></li>
+          <li><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn--small" data-modal-open>Записаться</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__bg-circle"></div>
+        <div class="hero__bg-circle"></div>
+        <div class="hero__bg-circle"></div>
+      </div>
+      <div class="container hero__inner">
+        <h1 class="hero__title">Анна Волкова</h1>
+        <div class="hero__deco"></div>
+        <p class="hero__subtitle">Психолог. Тревожность, отношения, самооценка</p>
+        <p class="hero__subtitle">Помогаю справляться с тревогой и выстраивать отношения с собой и другими</p>
+        <a class="btn btn--pulse hero__cta" href="#" data-modal-open>Записаться на консультацию</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">О себе</h2>
+        <div class="about__grid">
+          <div class="about__text section__text">
+            <p>Помогаю справляться с тревогой, выстраивать близкие отношения и находить опору в себе. В работе создаю пространство, где можно остановиться, почувствовать и понять то, что обычно уходит в фон.</p>
+            <p>Моя профессиональная позиция — бережный и честный диалог без оценки. Мы вместе ищем опоры, которые работают именно в вашей жизни, а не подгоняем её под универсальные схемы.</p>
+          </div>
+          <blockquote class="about__quote">«Пространство, где можно остановиться и услышать себя»</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="section__title">Услуги</h2>
+        <div class="services__grid">
+          <article class="services__card">
+            <svg class="services__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle></svg>
+            <h3 class="services__title">Индивидуальная консультация</h3>
+            <p class="services__text">Работа один на один: тревожность, самооценка, кризисные состояния и личные запросы.</p>
+            <p class="services__meta">5 000 ₽ · 60 минут</p>
+            <a class="btn services__cta" href="#" data-modal-open>Записаться</a>
+          </article>
+          <article class="services__card">
+            <svg class="services__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="4"></circle><circle cx="6" cy="6" r="4"></circle></svg>
+            <h3 class="services__title">Парная терапия</h3>
+            <p class="services__text">Для пар, которые хотят понять друг друга, перестать разрушительный сценарий и научиться говорить.</p>
+            <p class="services__meta">7 500 ₽ · 90 минут</p>
+            <a class="btn services__cta" href="#" data-modal-open>Записаться</a>
+          </article>
+          <article class="services__card">
+            <svg class="services__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <h3 class="services__title">Онлайн-сессия</h3>
+            <p class="services__text">Та же глубина работы из любой точки мира. Формат не влияет на результат.</p>
+            <p class="services__meta">4 500 ₽ · 60 минут</p>
+            <a class="btn services__cta" href="#" data-modal-open>Записаться</a>
+          </article>
+          <article class="services__card">
+            <svg class="services__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><circle cx="19" cy="5" r="3"></circle><circle cx="5" cy="19" r="3"></circle></svg>
+            <h3 class="services__title">Групповая терапия</h3>
+            <p class="services__text">Закрытая группа до 8 человек. Опыт принятия и поддержки в безопасном круге.</p>
+            <p class="services__meta">3 000 ₽ · 120 минут</p>
+            <a class="btn services__cta" href="#" data-modal-open>Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <h2 class="section__title">Как проходит сессия</h2>
+        <div class="process__list">
+          <div class="process__step">
+            <span class="process__number">01</span>
+            <h3>Знакомство</h3>
+            <p>Обсуждаем запрос, я задаю вопросы, чтобы понять, что для вас важно.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">02</span>
+            <h3>Работа</h3>
+            <p>Исследуем паттерны, ищем опоры и ресурсы, которые работают в вашей жизни.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">03</span>
+            <h3>Итог</h3>
+            <p>Закрепляем результат, договариваемся о следующем шаге и поддерживаем связь.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="container">
+        <h2 class="section__title">Подход</h2>
+        <ul class="approach__list">
+          <li class="approach__item">
+            <h3 class="approach__title">КПТ</h3>
+            <p class="approach__text">Работа с тревожными мыслями и поведенческими паттернами через практику и структуру.</p>
+          </li>
+          <li class="approach__item">
+            <h3 class="approach__title">Гештальт</h3>
+            <p class="approach__text">Внимание к тому, что происходит здесь и сейчас: чувства, контакты, незавершённые ситуации.</p>
+          </li>
+            <li class="approach__item">
+              <h3 class="approach__title">Осознанность</h3>
+              <p class="approach__text">Практики осознанности, которые возвращают опору в тело и помогают замечать ранние сигналы стресса.</p>
+            </li>
+          <li class="approach__item">
+            <h3 class="approach__title">Арт-терапия</h3>
+            <p class="approach__text">Творческие методы для тех, кому трудно подобрать слова и важно выразить состояние образом.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section__title">Образование</h2>
+        <ul class="education__list">
+          <li class="education__item">МГУ, факультет психологии — специалитет</li>
+          <li class="education__item">Программа подготовки психологов-консультантов, КПТ-направление</li>
+          <li class="education__item">Регулярное повышение квалификации по работе с тревожными расстройствами</li>
+          <li class="education__item">Личная терапия и регулярные супервизии практики</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <div class="reviews__slider">
+          <div class="reviews__track">
+            <figure class="reviews__slide">
+              <blockquote class="reviews__text">Анна помогла мне перестать жить в постоянном ожидании катастрофы. За несколько месяцев я научилась замечать тревогу раньше, чем она захлёстывает.</blockquote>
+              <figcaption class="reviews__author">
+                <span class="reviews__author-name">М. К.</span>
+                <span class="reviews__stars">★★★★★</span>
+              </figcaption>
+            </figure>
+            <figure class="reviews__slide">
+              <blockquote class="reviews__text">Мы пришли в парную терапию на грани разрыва. Она не давала готовых решений — но благодаря её вопросам мы впервые за годы поговорили честно.</blockquote>
+              <figcaption class="reviews__author">
+                <span class="reviews__author-name">Д. и О.</span>
+                <span class="reviews__stars">★★★★★</span>
+              </figcaption>
+            </figure>
+            <figure class="reviews__slide">
+              <blockquote class="reviews__text">Онлайн-формат оказался неожиданно комфортным. Чувствуется безопасное пространство, даже через экран. Самооценка стала заметно тише и ровнее.</blockquote>
+              <figcaption class="reviews__author">
+                <span class="reviews__author-name">Е. С.</span>
+                <span class="reviews__stars">★★★★★</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="reviews__nav">
+            <button class="reviews__arrow reviews__arrow--prev" type="button" aria-label="Предыдущий отзыв">
+              <svg class="reviews__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18 L9 12 L15 6"></path></svg>
+            </button>
+            <div class="reviews__dots"></div>
+            <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв">
+              <svg class="reviews__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 L15 12 L9 18"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section__title">Частые вопросы</h2>
+        <div class="faq__list">
+          <div class="faq__item">
+            <button class="faq__question" type="button">Сколько длится сессия?</button>
+            <div class="faq__answer"><p>Стандартная сессия длится 60 минут. Парная терапия — 90 минут, групповая — 120 минут.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">Как проходит первая встреча?</button>
+            <div class="faq__answer"><p>Знакомство, обсуждение вашего запроса и определение направленности работы.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">Что если не понравится?</button>
+            <div class="faq__answer"><p>Вы можете сменить специалиста. Комфорт и доверие — основа работы.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">Онлайн или офлайн?</button>
+            <div class="faq__answer"><p>Оба формата доступны. Выбирайте тот, который удобнее вам.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">Сколько нужно сессий?</button>
+            <div class="faq__answer"><p>Количество сессий зависит от запроса. Мы обсудим это на первой встрече.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">Конфиденциально ли?</button>
+              <div class="faq__answer"><p>Полная конфиденциальность в рамках профессиональной этики.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <div class="contacts__grid">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__label">Telegram</span>
+              <a class="link" href="https://t.me/">@anna_volkova</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__label">Телефон</span>
+              <a class="link" href="tel:+79000000000">+7 900 000-00-00</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__label">Email</span>
+              <a class="link" href="mailto:anna@example.com">anna@example.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Анна Волкова. Пространство</div>
+  </footer>
+
+  <div class="modal" id="modalForm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Закрыть окно">×</button>
+      <h2 class="modal__title" id="modal-title">Запись на консультацию</h2>
+      <form class="form form--modal" novalidate>
+        <div class="form__field">
+          <label class="form__label" for="modal-name">Имя</label>
+          <input class="form__input" type="text" id="modal-name" name="name" autocomplete="name" required>
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="modal-phone">Телефон</label>
+          <input class="form__input" type="tel" id="modal-phone" name="phone" autocomplete="tel" required>
+          <span class="form__error" role="alert"></span>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="modal-message">Сообщение</label>
+          <textarea class="form__textarea" id="modal-message" name="message" required></textarea>
+          <span class="form__error" role="alert"></span>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal modal--success" id="modalSuccess" role="dialog" aria-modal="true" aria-labelledby="modal-success-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog modal__dialog--success">
+      <button class="modal__close" type="button" aria-label="Закрыть окно">×</button>
+      <div class="modal__check" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <circle class="modal__check-circle" cx="50" cy="50" r="46"></circle>
+          <path class="modal__check-mark" d="M32 52 L46 66 L70 38"></path>
+        </svg>
+      </div>
+      <p class="modal__success-text" id="modal-success-title">Вы записаны! Я свяжусь с вами в течение дня.</p>
+    </div>
+  </div>
+
+  <script src="js/modal.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://unpkg.com/imask"></script>
+</body>
+</html>
